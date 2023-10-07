@@ -10,7 +10,7 @@ print(datetime.now())
 
 # Set up the layout of the page
 st.title("Expense Tracker")
-st.write("Welcome to our Expense Tracker! Please enter your expenses below.")
+st.write("Welcome to your Expense Tracker Ananya! Please enter your expenses below.")
 
 # Create a form to collect user input
 
