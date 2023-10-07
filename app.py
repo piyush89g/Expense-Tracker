@@ -17,14 +17,13 @@ st.write("Welcome to our Expense Tracker! Please enter your expenses below.")
 with st.form("expense_tracker"):
     # Add fields for date, category, amount, and description
     date = st.date_input("Date", value=datetime.now())
-    category = st.selectbox("Category", ["Cab", "Food", "Flight Seat", "Flight", "Others"])
+    category = st.selectbox("Category", ["Cab", "Food", "Flight", "Others"])
     
-    flight = st.selectbox("Flight", ["AirAsia", "Vistara", "Indigo", "Akasa", "Spicejet", "StarAir", "AirIndia"], disabled=True)
-    
+    flight = st.selectbox("Flight", ["AirAsia", "Vistara", "Indigo", "Akasa", "Spicejet", "StarAir", "AirIndia"])
     # Enable the flight dropdown if the category is "Flight"
-    if category == "Flight":
-        flight.disabled = False 
-        
+    #if category == "Flight":
+        #flight.disabled = False        
+      
     amount = st.number_input("Amount", step=10)
     description = st.text_area("Description", height=150)
     
